@@ -1,0 +1,11 @@
+<h1>Convert <%= @current_symbol %></h1>
+
+Go <a href = "/forex">back</a>
+
+<ul>
+  <% @symbols_list.each do |another_symbol|%>
+    <li>
+      <a href = "/forex/<%= @current_symbol%>/<%= another_symbol %>">Convert 1 <%=@current_symbol %> to <%= another_symbol %>...</a>
+    </li>
+  <% end %>
+</ul>
